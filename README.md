@@ -6,10 +6,10 @@ LGO proxy can be configured to target production (by default) or sandbox environ
 
 ## Documentation
 
-| Environment | Url                              |
-| ----------- | -------------------------------- |
-| production  | https://doc.exchange.lgo.markets |
-| sandbox     | https://doc.sandbox.lgo.markets  |
+| Environment        | Url                              |
+| ------------------ | -------------------------------- |
+| markets-production | https://doc.exchange.lgo.markets |
+| markets-sandbox    | https://doc.sandbox.lgo.markets  |
 
 ## Run with docker
 
@@ -101,7 +101,7 @@ Examples of signer library paths based on OS:
 | Linux | /usr/local/lib/softhsm/libsofthsm2.so                      |
 | macOS | /usr/local/Cellar/softhsm/2.5.0/lib/softhsm/libsofthsm2.so |
 
-You can target another environment with an option: `--env sandbox`.
+You can target another environment with an option: `--env markets-sandbox`.
 
 ## License
 
