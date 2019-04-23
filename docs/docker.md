@@ -54,5 +54,7 @@ docker run \
 
 Replace `<your_tokens_location>` with the tokens location on your host.
 
+You can target another environment with another variable: `-e LGO_ENV=sandbox`.
+
 You may use or not the provided restart policy in example.
 See [docker documentation](https://docs.docker.com/engine/reference/run/#restart-policies---restart) for more details.

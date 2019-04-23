@@ -101,6 +101,8 @@ Examples of signer library paths based on OS:
 | Linux | /usr/local/lib/softhsm/libsofthsm2.so                      |
 | macOS | /usr/local/Cellar/softhsm/2.5.0/lib/softhsm/libsofthsm2.so |
 
+You can target another environment with an option: `--env sandbox`.
+
 ## License
 
 [MIT](LICENSE)
