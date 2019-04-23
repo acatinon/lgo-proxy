@@ -1,0 +1,25 @@
+# Changelog
+
+## Unreleased
+
+## 1.0.4 (2019-03-29)
+
+### Changed
+
+- Node 8 -> Node 10
+
+### Fixed
+
+- Request timeout added in http service to avoid infinite wait on keys download
+
+## 1.0.3 (2019-03-20)
+
+### Fixed
+
+- Order placement or cancellation via ws or http allows client to provide a reference
+
+## 1.0.2 (2019-03-19)
+
+### Added
+
+- We check proxy is correctly initialized at startup to fail fast
