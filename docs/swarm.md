@@ -2,13 +2,9 @@
 
 Running in swarm mode allow you to use built-in secrets instead of plain environment variables.
 
-You need a proxy package to run it with Docker in swarm mode.
+## Use available image or build one
 
-## Build the image
-
-```
-docker build . -t lgo-proxy
-```
+Please have a look at [docker.md] to see how to pull or build the docker image.
 
 ## Initialize Swarm
 
@@ -40,7 +36,7 @@ docker service create \
   --name lgo-proxy-init \
   -e LGO_SIGNER_PIN_FILE="/run/secrets/lgo_signer_pin" \
   -d \
-  lgo-proxy \
+  lgopublic/lgo-proxy:v1.0.8 \
   init
 ```
 
@@ -87,7 +83,7 @@ docker service create \
   -e LGO_ACCESS_KEY_FILE="/run/secrets/lgo_access_key" \
   -p 3002:3002 \
   -d \
-  lgo-proxy
+  lgopublic/lgo-proxy:v1.0.8
 ```
 
 Replace `<your_tokens_location>` with the tokens location on your host.

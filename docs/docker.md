@@ -1,6 +1,20 @@
 # Run proxy with Docker
 
+## Use the available docker image
+
+Docker image is available on official registry: https://hub.docker.com/r/lgopublic/lgo-proxy
+
+We encourage you to use a specific tag instead of `latest` one.
+
+For examples below we will use `v1.0.8` as tag.
+
+```
+docker pull lgopublic/lgo-proxy:v1.0.8
+```
+
 ## Build the image
+
+You can alternatively build the image yourself.
 
 ```
 docker build . -t lgo-proxy
@@ -19,16 +33,7 @@ docker run \
   --rm \
   -v <your_tokens_location>:/var/lib/softhsm/tokens \
   -e LGO_SIGNER_PIN=<your_pin> \
-  lgo-proxy \
-  init
-```
-
-```
-docker run \
-  --rm \
-  -v <your_tokens_location>:/var/lib/softhsm/tokens \
-  -e LGO_SIGNER_PIN=<your_pin> \
-  lgo-proxy \
+  lgopublic/lgo-proxy:v1.0.8 \
   init
 ```
 
@@ -49,7 +54,7 @@ docker run \
   --restart=on-failure \
   --name lgo-proxy \
   -p 3002:3002 \
-  lgo-proxy
+  lgopublic/lgo-proxy:v1.0.8
 ```
 
 Replace `<your_tokens_location>` with the tokens location on your host.

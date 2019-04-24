@@ -1,5 +1,7 @@
 # LGO proxy
 
+[![build status](https://gitlab.com/lgo_public/lgo-proxy/badges/master/build.svg)](https://gitlab.com/lgo_public/lgo-proxy/commits/master)
+
 LGO proxy is an HTTP and WebSocket server which encapsulate encryptions keys and request signature to target LGO API.
 
 LGO proxy can be configured to target production (by default) or sandbox environments.
