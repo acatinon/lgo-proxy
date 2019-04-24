@@ -1,11 +1,6 @@
 ---
-stages:
-  - test
-  - docker-push
-
 test:
   image: node:10
-  stage: test
   cache:
     untracked: true
     paths:
@@ -16,6 +11,7 @@ test:
 
 docker-push:
   image: docker:latest
+  stage: deploy
   services:
     - docker:dind
   variables:
