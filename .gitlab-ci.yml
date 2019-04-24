@@ -1,10 +1,6 @@
 ---
 test:
   image: node:10
-  cache:
-    untracked: true
-    paths:
-      - node_modules
   script:
     - npm install
     - npm test
