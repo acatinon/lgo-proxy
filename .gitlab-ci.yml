@@ -18,10 +18,12 @@ docker-push:
   image: docker:latest
   services:
     - docker:dind
+  variables:
+    TAGGED_IMAGE: lgopublic/lgo-proxy:${CI_COMMIT_TAG:-latest}
   script:
     - docker login -u "${DOCKER_REGISTRY_USER}" -p "${DOCKER_REGISTRY_PASSWORD}"
-    - docker build --pull -t lgopublic/lgo-proxy .
-    - docker push "lgopublic/lgo-proxy:${CI_COMMIT_TAG:-latest}"
+    - docker build --pull -t "${TAGGED_IMAGE}" .
+    - docker push "${TAGGED_IMAGE}"
   only:
     - master
     - tags
