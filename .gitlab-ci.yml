@@ -1,6 +1,7 @@
 ---
 stages:
   - test
+  - docker-push
 
 test:
   image: node:10
@@ -12,3 +13,15 @@ test:
   script:
     - npm install
     - npm test
+
+docker-push:
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker login -u "${DOCKER_REGISTRY_USER}" -p "${DOCKER_REGISTRY_PASSWORD}"
+    - docker build --pull -t lgopublic/lgo-proxy .
+    - docker push "lgopublic/lgo-proxy:${CI_COMMIT_TAG:-latest}"
+  only:
+    - master
+    - tags
