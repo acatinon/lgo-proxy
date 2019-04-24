@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.0.8 (2019-04-24)
+
+### Changed
+
+- The proxy can now be started to target sandbox or production environment
+
 ## 1.0.4 (2019-03-29)
 
 ### Changed
