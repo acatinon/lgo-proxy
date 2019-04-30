@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- LGO backend urls can be overriden via env vars
+
 ## 1.0.8 (2019-04-24)
 
 ### Changed
