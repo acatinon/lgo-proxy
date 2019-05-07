@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
 ## 1.1.0 (2019-05-07)
 
 ### Changed
