@@ -1,10 +1,11 @@
 # Changelog
 
-## Unreleased
+## 1.1.0 (2019-05-07)
 
 ### Changed
 
 - LGO backend urls can be overriden via env vars
+- Accounting operations endpoint
 
 ## 1.0.8 (2019-04-24)
 
