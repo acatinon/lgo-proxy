@@ -6,10 +6,10 @@ Docker image is available on official registry: https://hub.docker.com/r/lgopubl
 
 We encourage you to use a specific tag instead of `latest` one.
 
-For examples below we will use `v1.0.8` as tag.
+For examples below we will use `v1.1.0` as tag.
 
 ```
-docker pull lgopublic/lgo-proxy:v1.0.8
+docker pull lgopublic/lgo-proxy:v1.1.0
 ```
 
 ## Build the image
@@ -33,7 +33,7 @@ docker run \
   --rm \
   -v <your_tokens_location>:/var/lib/softhsm/tokens \
   -e LGO_SIGNER_PIN=<your_pin> \
-  lgopublic/lgo-proxy:v1.0.8 \
+  lgopublic/lgo-proxy:v1.1.0 \
   init
 ```
 
@@ -54,7 +54,7 @@ docker run \
   --restart=on-failure \
   --name lgo-proxy \
   -p 3002:3002 \
-  lgopublic/lgo-proxy:v1.0.8
+  lgopublic/lgo-proxy:v1.1.0
 ```
 
 Replace `<your_tokens_location>` with the tokens location on your host.

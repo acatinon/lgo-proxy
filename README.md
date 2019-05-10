@@ -1,21 +1,34 @@
-# LGO proxy
+# LGO Proxy
 
 [![build status](https://gitlab.com/lgo_public/lgo-proxy/badges/master/build.svg)](https://gitlab.com/lgo_public/lgo-proxy/commits/master)
 
 LGO proxy is an HTTP and WebSocket server which encapsulate encryptions keys and request signature to target LGO API.
 
-LGO proxy can be configured to target production (by default) or sandbox environments.
+## Environments
+
+LGO proxy can be configured to target LGO Markets or LGO Exchange with their own production or sandbox environments.
+
+See [Run server](#run-server) to learn how to target an environment.
+
+Available environments:
+
+| Name                | Description                                                      |
+| ------------------- | ---------------------------------------------------------------- |
+| markets-production  | LGO Markets production environment. Default environment.         |
+| markets-sandbox     | LGO Markets sandbox environment to test api without real money.  |
+| exchange-production | LGO Exchange production environment.                             |
+| exchange-sandbox    | LGO Exchange sandbox environment to test api without real money. |
 
 ## Documentation
 
-| Environment        | Url                              |
-| ------------------ | -------------------------------- |
-| markets-production | https://doc.exchange.lgo.markets |
-| markets-sandbox    | https://doc.sandbox.lgo.markets  |
+| Distributor  | Url                              |
+| ------------ | -------------------------------- |
+| LGO Markets  | https://doc.exchange.lgo.markets |
+| LGO Exchange | https://doc.trading.lgo.exchange |
 
 ## Run with docker
 
-The simplest way to use LGO proxy is to use docker.
+The simplest way to run LGO proxy is to use docker.
 
 See [docs/docker.md](docs/docker.md) or [docs/swarm.md](docs/swarm.md).
 

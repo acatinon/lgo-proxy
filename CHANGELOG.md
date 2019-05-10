@@ -4,6 +4,8 @@
 
 ### Changed
 
+- Proxy can now target LGO Exchange environment
+
 ## 1.1.0 (2019-05-07)
 
 ### Changed
