@@ -6,6 +6,10 @@
 
 - Proxy can now target LGO Exchange environment
 
+### Fixed
+
+- SoftHSM LGO slot detection is more reliable
+
 ## 1.1.0 (2019-05-07)
 
 ### Changed
