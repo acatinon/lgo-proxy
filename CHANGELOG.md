@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Using standard setTimeout instead of cron dependency to retrieve keys
+
 ## 1.1.1 (2019-05-14)
 
 ### Changed
