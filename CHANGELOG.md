@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.4 (2019-07-10)
+
+### Changed
+
+- Add exchange-sandbox and exchange-production environments options, thanks to @acatinon.
+
 ## 1.1.3 (2019-06-11)
 
 ### Changed
