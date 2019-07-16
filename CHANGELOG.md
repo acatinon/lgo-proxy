@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.5 (2019-07-16)
+
+### Changed
+
+- Add candles endpoint, thanks to @acatinon.
+
 ## 1.1.4 (2019-07-10)
 
 ### Changed
