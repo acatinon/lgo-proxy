@@ -36,7 +36,7 @@ docker service create \
   --name lgo-proxy-init \
   -e LGO_SIGNER_PIN_FILE="/run/secrets/lgo_signer_pin" \
   -d \
-  lgopublic/lgo-proxy:v1.1.0 \
+  lgopublic/lgo-proxy:v1.2.0 \
   init
 ```
 
@@ -83,7 +83,7 @@ docker service create \
   -e LGO_ACCESS_KEY_FILE="/run/secrets/lgo_access_key" \
   -p 3002:3002 \
   -d \
-  lgopublic/lgo-proxy:v1.1.0
+  lgopublic/lgo-proxy:v1.2.0
 ```
 
 Replace `<your_tokens_location>` with the tokens location on your host.
