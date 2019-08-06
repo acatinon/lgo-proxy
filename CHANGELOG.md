@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 (unreleased)
+
+### Changed
+
+- Environments are simplified to `production` and `sandbox`
+- `markets-production` and `exchange-production` are merged to single `production` environment
+- `markets-sandbox` and `exchange-sandbox` are merged to single `sandbox` environment
+
 ## 1.1.4 (2019-07-10)
 
 ### Changed

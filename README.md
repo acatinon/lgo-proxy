@@ -6,25 +6,29 @@ LGO proxy is an HTTP and WebSocket server which encapsulate encryptions keys and
 
 ## Environments
 
-LGO proxy can be configured to target LGO Markets or LGO Exchange with their own production or sandbox environments.
+LGO proxy can be configured to target production or sandbox environments.
 
 See [Run server](#run-server) to learn how to target an environment.
 
 Available environments:
 
-| Name                | Description                                                      |
-| ------------------- | ---------------------------------------------------------------- |
-| markets-production  | LGO Markets production environment. Default environment.         |
-| markets-sandbox     | LGO Markets sandbox environment to test api without real money.  |
-| exchange-production | LGO Exchange production environment.                             |
-| exchange-sandbox    | LGO Exchange sandbox environment to test api without real money. |
+| Name       | Description                                             |
+| ---------- | ------------------------------------------------------- |
+| production | LGO production environment. Default environment.        |
+| sandbox    | LGO sandbox environment to test api without real money. |
+
+Depecrated environments:
+
+| Name                | Description              |
+| ------------------- | ------------------------ |
+| markets-production  | Equivalent to production |
+| markets-sandbox     | Equivalent to sandbox    |
+| exchange-production | Equivalent to production |
+| exchange-sandbox    | Equivalent to sandbox    |
 
 ## Documentation
 
-| Distributor  | Url                              |
-| ------------ | -------------------------------- |
-| LGO Markets  | https://doc.exchange.lgo.markets |
-| LGO Exchange | https://doc.trading.lgo.exchange |
+https://doc.exchange.lgo.markets
 
 ## Run with docker
 
@@ -116,7 +120,7 @@ Examples of signer library paths based on OS:
 | Linux | /usr/local/lib/softhsm/libsofthsm2.so                      |
 | macOS | /usr/local/Cellar/softhsm/2.5.0/lib/softhsm/libsofthsm2.so |
 
-You can target another environment with an option: `--env markets-sandbox`.
+You can target another environment with an option: `--env sandbox`.
 
 ## License
 
