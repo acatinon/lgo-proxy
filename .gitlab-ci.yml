@@ -1,6 +1,6 @@
 ---
 test:
-  image: node:10
+  image: node:10.16
   script:
     - npm install
     - npm test
