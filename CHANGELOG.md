@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0 (2019-09-19)
+
+### Added
+
+- New http live endpoints
+
+### Changed
+
+- Order placement or cancellation now return order id
+- Deprecate some endpoints to reflect new /v1/history urls
+
 ## 1.2.0 (2019-08-06)
 
 ### Changed
