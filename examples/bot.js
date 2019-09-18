@@ -62,9 +62,7 @@ async function prepareOrder(order) {
 
 function logOrder(order) {
   console.info(
-    `New order: ${order.type} ${order.side} ${order.product_id} ${
-      order.quantity
-    } ${order.price}`
+    `New order: ${order.type} ${order.side} ${order.product_id} ${order.quantity} ${order.price}`
   );
 }
 
