@@ -111,7 +111,10 @@ node ./lib/main start \
   --signer-library-path <softhsm_library_path> \
   --signer-pin <your_pin> \
   --access-key <your_access_key>
+  --authorized-origin http://localhost:9000
 ```
+
+The `--authorized-origin` parameter is optional and allow to add the `Access-Control-Allow-Origin` header to all responses sent to the proxy client and set the value to the parameter value (in the example above `Access-Control-Allow-Origin: http://localhost:9000`).
 
 Examples of signer library paths based on OS:
 
