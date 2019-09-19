@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 (2019-09-19)
+
+### Changed
+
+- Move /orders endpoints to /v1/live/orders
+
 ## 1.3.0 (2019-09-19)
 
 ### Added
