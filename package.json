@@ -22,7 +22,7 @@
     "express": "4.17.1",
     "express-winston": "3.3.0",
     "graphene-pk11": "2.1.2",
-    "http-proxy": "1.17.0",
+    "http-proxy": "1.18.1",
     "lodash": "4.17.15",
     "moment": "2.24.0",
     "node-rsa": "1.0.5",
